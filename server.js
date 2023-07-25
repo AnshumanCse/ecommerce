@@ -1,6 +1,6 @@
 import express from "express";
 // import colors from "colors";
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 import morgan from "morgan";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoute.js";
@@ -10,7 +10,7 @@ import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
 //configure env
-dotenv.config();
+// dotenv.config();
 
 //databse config
 connectDB();
@@ -39,7 +39,7 @@ app.use("*", function (req, res) {
 });
 
 //PORT
-const PORT = process.env.PORT || 1010;
+const PORT = 5050;
 
 //run listen
 app.listen(PORT, () => {
